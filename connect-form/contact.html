@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book & Message</title>
+<style>
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;  
+  background: url('overlooking.jpg') no-repeat center center/cover;
+}
+
+/* Background layer */
+body::before {
+		content: ""; 
+		position: absolute;
+		top: 0; 
+		left: 0; 
+		right: 0; 
+		bottom: 0;
+		background: rgba(0,0,0,0.6); 
+		z-index: 0;
+    }
+
+body {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+body.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.form-box {
+  flex: 1;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: rgba(16,17,17,0.45);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+h2, h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input, select, textarea, button {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input, select, textarea {
+  background-color: rgba(255,255,255,0.9);
+  color: #000;
+  border: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.bottom_left {
+  margin-top: 85vh;
+  margin-left: 165vh;
+  background-color: #fff;
+  position: absolute;
+  padding: 0px 40px;
+  text-decoration: none;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.bottom_left h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.bottom_left a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="bottom_left">
+<h3><a href="../index.html">Return</a></h3>
+</div>
+
+<div class="container">
+
+  <div class="form-box">
+    <h3>BOOK NOW</h3>
+    <form method="post" action="send.php">
+      <input type="hidden" name="form_type" value="booking">
+	  <label for="book_name">Name</label>
+	  <input type="text" name="book_name" placeholder="Full Name">
+      <label for="email">E-mail *</label>
+      <input type="email" name="email" placeholder="example@email.com" required>
+
+      <label for="destination">Destination</label>
+      <select name="destination">
+        <option>Please Select</option>
+        <option>Antipolo Cathedral</option>
+        <option>Pinto Art Museum</option>
+        <option>Hinulugang Tak-tak</option>
+        <option>Cloud 9</option>
+        <option>Caza Peregrine Resort & Restaurant</option>
+        <option>Starbucks</option>
+      </select>
+
+      <label for="guests">Number of Guests *</label>
+      <input type="number" name="guests" min="1" value="0" required>
+
+      <label for="arrival-date">Date *</label>
+      <input type="date" name="arrival_date" required>
+
+      <label for="arrival-time">Time *</label>
+      <input type="time" name="arrival_time" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="form-box">
+    <h2>Message Us</h2>
+    <p>If you have any questions or suggestions, feel free to reach out!</p>
+    <form method="post" action="send.php">
+      <input type="hidden" name="form_type" value="message">
+
+      <label for="name">Your Name *</label>
+      <input type="text" name="name" required>
+
+      <label for="msg_email">Your Email *</label>
+      <input type="email" name="msg_email" required>
+	  
+	  <label for="subject">Subject *</label>
+      <input type="subject" name="subject" required>
+
+      <label for="message">Message *</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+<script>
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
+</script>
+
+</body>
+</html>
