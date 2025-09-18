@@ -11,12 +11,17 @@
 	<div class="hotspots-left-top">
 	<h3>HotSpots</h3>
 	</div>
+  <div class="chat-button">
+  <i class="fa-solid fa-comment"></i>
+  <span><a href="connect-form/contact.html">Connect with us</a></span>
+</div>
   <header id="navbar">
     <ul>
       <li><a href="#home">Home</a></li>
+      <li><a href="#mood">Mood</a></li>
       <li><a href="#history">History</a></li>
       <li>
-      <a href="#destination">Destination</a>
+      <a href="#">Destination</a>
       <ul class="submenu">
       <li><a href="#spot-1">Antipolo<br> Cathedral</a></li>
       <li><a href="#spot-2">Pinto Art <br>Museum</a></li>
@@ -26,8 +31,7 @@
 	  <li><a href="#spot-6">Starbucks</a></li>
       </ul>
       </li>
-      <li><a href="#about">About us</a></li>
-      <li><a href="#contact">Message Us</a></li>
+      <li><a href="#about">About us</a></li>  
     </ul>
   </header>
 
@@ -36,38 +40,60 @@
 	<div class="home-text">
       <h1>PLAN YOUR SAFE TRIP WITH US</h1>
       <p>(Discover the beauty of Antipolo City)</p>
-	  </div>
-	  
-    <div class="booking-form">
-      <h3>BOOK NOW</h3>
-      <form>
-        <label for="email">E-mail *</label>
-        <input type="email" id="email" placeholder="example@email.com">
-		
-		<label for="destination">Destination</label>
-		<select id="destination">
-			<option>Please Select</option>
-			<option>Antipolo Cathedral</option>
-			<option>Pinto Art Museum</option>
-			<option>Hinulugang Tak-tak</option>
-			<option>Cloud 9</option>
-			<option>Caza Peregrine Resort & Restaurant</option>
-			<option>Starbucks</option>
-		</select>
-
-        <label for="guests">Number of Guests *</label>
-        <input type="number" id="guests" min="1" value="0">
-
-        <label for="arrival">Date & Time *</label>
-        <input type="date" id="arrival-date">
-        <input type="time" id="arrival-time">
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
     </section> 
-	
-	<div class="antipolo-section">
+    </div>
+
+<div class="mood-section">
+    <section id="mood" class="mood show">
+      <div class="mood-text">
+        <h2><i><b>- LET US HELP CATCH YOUR ITINERARY VIBE -</b></i></h2>
+
+        <div class="mood-item">
+          <p>Spiritual & Devotion</p>
+          <ul>
+            <li><a href="#spot-1">Antipolo Cathedral</a></li>
+          </ul>
+        </div>
+
+        <div class="mood-item">
+          <p>Artistic & Aesthetic</p>
+          <ul>
+            <li><a href="#spot-2">Pinto Art Museum</a></li>
+          </ul>
+        </div>
+
+        <div class="mood-item">
+          <p>Nature & Playful</p>
+          <ul>
+            <li><a href="#spot-3">Hinulugang Tak-tak</a></li>
+          </ul>
+        </div>
+
+        <div class="mood-item">
+          <p>Elevated & Panoramic</p>
+          <ul>
+            <li><a href="#spot-4">Cloud 9 Antipolo</a></li>
+          </ul>
+        </div>
+
+        <div class="mood-item">
+          <p>Scenic & Serene</p>
+          <ul>
+            <li><a href="#spot-5">Hinulugang Taktak</a></li>
+          </ul>
+        </div>
+
+        <div class="mood-item">
+          <p>Cozy & Brew</p>
+          <ul>
+            <li><a href="#spot-6">Starbucks</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="antipolo-section">
     <section id="history" class="history">
       <h2>History of Antipolo</h2>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Long ago, Antipolo's slopes were shaded by towering tipolo trees, which gave the town its name. Antipolo is known as the "Pilgrimage Capital of the Philippines."<br>
@@ -186,9 +212,9 @@
         <h2>Gallery</h2>
         <img src="Images/c9-4.jpg">
         <img src="Images/c9-5.jpg">
-        <video autoplay muted loop width="auto" height="400" style="border-radius: 6px; margin-right: 20px; " >
-		<source src="Images\c9-3.MOV" type="video/mp4">
-		</video>
+       <video class="hover-video" muted loop width="auto" height="400" style="border-radius: 6px; margin-right: 20px;">
+  <source src="Images/c9-3.MOV" type="video/mp4">
+</video>
         <img src="Images/c9-1.jpg">
         <img src="Images/c9-2.jpg">
       </section> 
@@ -218,9 +244,9 @@
         <h2>Gallery</h2>
         <img src="Images/cp-5.jpg">
         <img src="Images/cp-1.jpg">
-        <video autoplay muted loop width="auto" height="400" style="border-radius: 6px; margin-right: 20px; " >
-		<source src="Images\cp-3.mp4" type="video/mp4">
-		</video>
+        <video class="hover-video" muted loop width="auto" height="400" style="border-radius: 6px; margin-right: 20px;">
+    <source src="Images/cp-3.mp4" type="video/mp4">
+  </video>
         <img src="Images/cp-4.jpg">
         <img src="Images/cp-2.jpg">
 		</section>
@@ -276,25 +302,13 @@
         <div class="member"><img src="Images/Patiman.jpg"><div class="info"><h4>Patiman, John Ver D.</h4><p class="role">Assistant Developer</p><p>In my free time, I usually enjoy reading books or watching movies. Playing video games is also one of my hobbies.</p></div></div>
       </div>
     </section>
-	
-	 <section id="contact" class="contact">
-    <h2>Message Us</h2>
-    <p>If you have any questions or suggestions, feel free to reach out!</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
+    
   <footer>
     <p>&copy; 2025 ITS 1ST YR 3RD TRI. All rights reserved.</p>
-	<p>Created using Notepad++ and W3Schools</p>
+	<p>Created using Visual Studio Code and W3Schools</p>
   </footer>
 
   <script src="script.js"></script>
     
 </body>
-
   </html>
