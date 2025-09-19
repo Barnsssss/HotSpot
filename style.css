@@ -9,7 +9,7 @@
 		scroll-behavior: smooth;
     }
 	
-	.hotspots-left-top h3 {
+	.hotspots-left-top h3 a{
 		background-color: rgba(16, 17, 17, 0.3);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
