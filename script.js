@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const destinationLink = document.querySelector("#navbar ul li a[href='#']");
   const header = document.getElementById("navbar");
   const submenu = document.querySelector(".submenu");
-  const hotspotHeading = document.querySelector(".hotspots-left-top a");
+  const hotspotHeading = document.querySelector(".hotspots-left-top h3");
   
 
   const spotGalleryMap = {
