@@ -563,10 +563,11 @@
   		z-index: 1000;
 	}
 
-	.chat-button i {
+	.chat-button img {
+		height: 45px;
+		width: 35px;
   		font-size: 30px;
-  		flex-shrink: 0;
-  		text-decoration: none;
+		margin-left: 6px;
 	}	
 
 	.chat-button span {
