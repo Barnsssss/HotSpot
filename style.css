@@ -269,12 +269,12 @@
 	
     section.spot .spot-text h2 {
 		margin-bottom: 30px; 
-		font-size: 45px; 
+		font-size: 46px; 
 		color: white; 
 	}
 	
     section.spot .spot-text p {
-		font-size: 20px; 
+		font-size: 23px; 
 		line-height: 2.5; 
 		color: #ededed; 
 	}
@@ -354,65 +354,325 @@
       display: inline-block;
     }
 
-    .mood-item p {
-      text-align: center;
-      border-radius: 50px;
-      font-size: 25px; 
-      color: #ededed; 
-      background-color: #333;
-      padding: 40px 50px;
-      margin: 0;
-      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-	  margin-bottom: 50px;
-    }
+.mood-item-1,
+.mood-item-2,
+.mood-item-3,
+.mood-item-4,
+.mood-item-5,
+.mood-item-6 {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
 
-    .mood-item p:hover {
-      color: #000;
-      background-color: #ededed;
-      transform: scale(1.05);
-    }
+.mood-item-1 p {
+  text-align: center;
+  border-radius: 50px;
+  font-size: 25px; 
+  color: black; 
+  padding: 40px 50px;
+  margin: 0;
+  box-shadow: 0 0 25px rgba(255, 200, 50, 0.8);
+  background: linear-gradient(45deg, #ff9933, #ffeb3b);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
 
-    .mood-item ul {
-      position: absolute;
-      top: 70%;
-      left: 50%;
-      transform: translateX(-50%) translateY(10px);
-      margin: 0;
-      padding: 10px;
-      list-style: none;
-      background-color: #333;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      z-index: 10;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
+.mood-item-2 p {
+  text-align: center;
+  border-radius: 50px;
+  font-size: 25px; 
+  color: black; 
+  padding: 40px 50px;
+  margin: 0;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.8);
+  background: linear-gradient(45deg, #4B2C46, #C0829A);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
 
-    .mood-item ul li {
-      padding: 5px 10px;
-      white-space: nowrap;
-    }
+.mood-item-3 p {
+  text-align: center;
+  border-radius: 50px;
+  font-size: 25px; 
+  color: black;
+  padding: 40px 50px;
+  margin: 0;
+  box-shadow: 0 0 25px #4A5B41;
+  background: linear-gradient(45deg, #4A5B41, #D8A393);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
 
-    .mood-item ul li:hover {
-      background-color: #333;
-    }
+.mood-item-4 p {
+  text-align: center;
+  border-radius: 50px;
+  font-size: 25px; 
+  color: black;
+  padding: 40px 50px;
+  margin: 0;
+  box-shadow: 0 0 25px rgba(100, 200, 255, 0.8);
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
 
-    .mood-item:hover ul {
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateX(-50%) translateY(0);
-    }
+.mood-item-5 p {
+  text-align: center;
+  border-radius: 50px;
+  font-size: 25px; 
+  color: black;
+  padding: 40px 50px;
+  margin: 0;
+  box-shadow: 0 0 25px rgba(180, 160, 255, 0.8);
+  background: linear-gradient(45deg, #b993d6, #8ca6db);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
 
-	.mood-item li a {
-		color: #f2f2f2;
-		text-decoration: none;
-		transition: font-size 0.3s ease, color 0.3s ease;
-	}
-	.mood-item li a:hover{
-		font-size: 22px;
-	}
+.mood-item-6 p {
+  text-align: center;
+  border-radius: 50px;
+  font-size: 25px; 
+  color: black;
+  padding: 40px 50px;
+  margin: 0;
+  box-shadow: 0 0 25px rgba(180, 120, 60, 0.8);
+  background: linear-gradient(45deg, #6b4226, #d1a96f);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.mood-item-1 p:hover,
+.mood-item-1 ul li a:hover {
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 200, 50, 0.8);
+  background: linear-gradient(45deg, #ff9933, #ffeb3b);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  border-radius: 50px;
+}
+
+.mood-item-1 ul {
+  background: linear-gradient(45deg, #ff9933, #ffeb3b);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+}
+
+.mood-item-2 p:hover,
+.mood-item-2 ul li a:hover {
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.8);
+  background: linear-gradient(45deg, #4B2C46, #C0829A);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  border-radius: 50px;
+}
+
+.mood-item-2 ul {
+  background: linear-gradient(45deg, #4B2C46, #C0829A);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+}
+
+.mood-item-3 p:hover,
+.mood-item-3 ul li a:hover {
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #4A5B41;
+  background: linear-gradient(45deg, #4A5B41, #D8A393);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  border-radius: 50px;
+}
+
+.mood-item-3 ul {
+  background: linear-gradient(45deg, #4A5B41, #D8A393);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+}
+
+.mood-item-4 p:hover,
+.mood-item-4 ul li a:hover {
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(100, 200, 255, 0.8);
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  border-radius: 50px;
+}
+
+.mood-item-4 ul {
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+}
+
+.mood-item-5 p:hover,
+.mood-item-5 ul li a:hover {
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(180, 160, 255, 0.8);
+  background: linear-gradient(45deg, #b993d6, #8ca6db);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  border-radius: 50px;
+}
+
+.mood-item-5 ul {
+  background: linear-gradient(45deg, #b993d6, #8ca6db);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+}
+
+
+.mood-item-6 p:hover,
+.mood-item-6 ul li a:hover {
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(180, 120, 60, 0.8);
+  background: linear-gradient(45deg, #6b4226, #d1a96f);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  border-radius: 50px;
+}
+
+.mood-item-6 ul {
+  background: linear-gradient(45deg, #6b4226, #d1a96f);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+}
+
+@keyframes devotionMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.mood-item-1 ul,
+.mood-item-2 ul,
+.mood-item-3 ul,
+.mood-item-4 ul,
+.mood-item-5 ul,
+.mood-item-6 ul {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mood-item-1:hover ul,
+.mood-item-2:hover ul,
+.mood-item-3:hover ul,
+.mood-item-4:hover ul,
+.mood-item-5:hover ul,
+.mood-item-6:hover ul {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.mood-item-1 ul li a{
+  background: linear-gradient(45deg, #ff9933, #ffeb3b);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+.mood-item-2 ul li a{
+  background: linear-gradient(45deg, #4B2C46, #C0829A);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+.mood-item-3 ul li a {
+  background: linear-gradient(45deg, #4A5B41, #D8A393);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+.mood-item-4 ul li a {
+  background: linear-gradient(45deg,#2193b0, #6dd5ed);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+.mood-item-5 ul li a {
+  background: linear-gradient(45deg, #b993d6, #8ca6db);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+.mood-item-6 ul li a {
+  background: linear-gradient(45deg, #6b4226, #d1a96f);
+  background-size: 200% 200%;
+  animation: devotionMove 6s ease infinite;
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
 
     .spot-text a.button {
 		display: inline-block; 
@@ -679,7 +939,7 @@
 		content: "";
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 		z-index: 0;
 	}
 
@@ -700,7 +960,7 @@
 		content: "";
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 		z-index: 0;
 	}
 
@@ -722,7 +982,7 @@
 		content: "";
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 		z-index: 0;
 	}
 
@@ -744,7 +1004,7 @@
 		content: "";
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 		z-index: 0;
 	}
 
@@ -766,7 +1026,7 @@
 		content: "";
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 		z-index: 0;
 	}
 
@@ -787,7 +1047,7 @@
 		content: "";
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 		z-index: 0;
 	}
 
@@ -808,7 +1068,7 @@
 		content: "";
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 		z-index: 0;
 	}
 
@@ -829,7 +1089,7 @@
 		content: "";
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 		z-index: 0;
 	}
 
