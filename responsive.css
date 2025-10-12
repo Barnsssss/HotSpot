@@ -1,0 +1,118 @@
+/* ====== Responsive Styles ====== */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header li a {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .home-text h1 {
+    font-size: 28px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .home-text p {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Spot Section */
+  section.spot {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  section.spot img {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  section.spot .spot-text {
+    width: 100%;
+  }
+
+  section.spot .spot-text h2 {
+    font-size: 28px;
+  }
+
+  section.spot .spot-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Mood Section */
+  .mood-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .mood-text h2 {
+    font-size: 24px;
+  }
+
+  /* Buttons */
+  .button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  /* Team Section */
+  .team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .home-text h1 {
+    font-size: 22px;
+  }
+
+  .home-text p {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
